@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context reloadable="true">
+
+    <Resource
+        name="jdbc/datasource"
+        auth="Container"
+        type="javax.sql.DataSource"
+        defaultAutoCommit = "false"
+        maxActive="50"
+        maxIdle="10"
+        maxWait="10"
+        initialSize="10"
+        driverClassName="org.postgresql.Driver"
+        validationQuery="SELECT 'OK'"
+        testeWhileIdle="true"
+        testOnBorrow="true"
+        numTestsPerEvictonRun="5"
+        timesBetweenEvictonRunsMillis="5000"
+        minEvictableIdleTimeMillis="60000"
+        antiJARLocking="false"
+        antiResourceLocking="false"
+        userName="postgres"
+        password="sdfwer234"
+        url="jdbc:postegrsql//localhost:5432/postgres?autoReconect=true"/>
+        
+        <!-- veja comentário no final da aula 14 -->
+
+</Context>
